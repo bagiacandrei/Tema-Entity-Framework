@@ -13,7 +13,7 @@ namespace Personal.Entities
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public DateTime HireDate { get; set; }
-
+        public int JobId { get; set; }
         [ForeignKey("JobId")]
         public Job Job { get; set; }
         public decimal Salary { get; set; } 
@@ -22,6 +22,7 @@ namespace Personal.Entities
         [ForeignKey("EmployeeId")]
         public Employee Manager { get; set; }
 
+        public int DepartmentId { get; set; }
         [ForeignKey("DepartmentId")]
         public Department Department { get; set; }
     }

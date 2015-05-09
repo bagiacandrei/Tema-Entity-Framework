@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Personal.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -16,7 +17,7 @@ namespace Personal.Persistence
 
         public DbPersonalContext() : base("Personal") { }
         public DbSet<Entities.Department> Departments { get; set; }
-        public DbSet<Entities.Employee> Employees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

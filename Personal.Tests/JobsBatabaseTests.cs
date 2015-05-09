@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Shouldly;
+using System.Data.Entity;
+
 namespace Personal.Tests
 {
     public class JobsBatabaseTests
